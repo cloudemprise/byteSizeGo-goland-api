@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/http"
 
-	"byteSizeGo/my-first-api/internal/todo"
+	"github.com/cloudemprise/byteSizeGo-goland-api/internal/todo"
 )
 
 // TodoItem represents a JSON structure for receiving or sending a single todo item over HTTP.

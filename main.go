@@ -3,9 +3,9 @@ package main
 import (
 	"log"
 
-	"byteSizeGo/my-first-api/internal/db"
-	"byteSizeGo/my-first-api/internal/todo"
-	"byteSizeGo/my-first-api/internal/transport"
+	"github.com/cloudemprise/byteSizeGo-goland-api/internal/db"
+	"github.com/cloudemprise/byteSizeGo-goland-api/internal/todo"
+	"github.com/cloudemprise/byteSizeGo-goland-api/internal/transport"
 )
 
 func main() {

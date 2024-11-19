@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strings"
 
-	"byteSizeGo/my-first-api/internal/db"
+	"github.com/cloudemprise/byteSizeGo-goland-api/internal/db"
 )
 
 // Item represents a single todo item with a task description and its status.

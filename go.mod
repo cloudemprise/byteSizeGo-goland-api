@@ -1,4 +1,4 @@
-module byteSizeGo/my-first-api
+module github.com/cloudemprise/byteSizeGo-goland-api
 
 go 1.23
 
