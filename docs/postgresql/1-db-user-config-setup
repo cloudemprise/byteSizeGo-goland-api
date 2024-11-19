@@ -1,0 +1,38 @@
+
+>solar<:(~/go/src/byteSizeGo/my-first-api/docs/postgresql)
+>:$ sudo -u postgres psql
+[sudo] password for solar: 
+psql (13.17 (Debian 13.17-0+deb11u1))
+Type "help" for help.
+
+postgres=# SELECT current_user;
+ current_user 
+--------------
+ postgres
+(1 row)
+
+postgres=# CREATE DATABASE todos;
+CREATE DATABASE
+postgres=# \c todos
+You are now connected to database "todos" as user "postgres".
+todos=# CREATE ROLE bytesizego WITH LOGIN PASSWORD 'pa55word';
+CREATE ROLE
+todos=# exit
+
+>solar<:(~/go/src/byteSizeGo/my-first-api/docs/postgresql)
+>:$ psql --host=localhost --dbname=todos --username=bytesizego
+Password for user bytesizego: 
+psql (13.17 (Debian 13.17-0+deb11u1))
+SSL connection (protocol: TLSv1.3, cipher: TLS_AES_256_GCM_SHA384, bits: 256, compression: off)
+Type "help" for help.
+
+todos=> SELECT current_user;
+ current_user 
+--------------
+ bytesizego
+(1 row)
+
+todos=> exit
+
+>solar<:(~/go/src/byteSizeGo/my-first-api/docs/postgresql)
+>:$ 
